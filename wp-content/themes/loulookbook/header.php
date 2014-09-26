@@ -19,3 +19,14 @@
 </head>
 <body>
   <div id="container">
+    <header>
+      <nav class="clearfix">
+        <h4><a href="/">Lou</a></h4>
+        <div class="social">
+          <a href="" class="social_icon" target="_blank" id="instagram">Instagram</a>
+          <a href="" class="social_icon" target="_blank" id="facebook">Facebook</a>
+          <a href="" class="social_icon" target="_blank" id="twitter">Twitter</a>
+          <a href="" class="button">Download Lou</a>
+        </div>
+      </nav>
+    </header>

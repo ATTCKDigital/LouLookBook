@@ -42,20 +42,20 @@
   {
 
     // Other scripts
-    wp_register_script( 'global', get_template_directory_uri() . '/js/scripts_global.js', array( 'jquery' ));
+    wp_register_script( 'home', get_template_directory_uri() . '/js/scripts_home.js', array( 'jquery' ), '', true);
 
 
     // Other stylesheets
-    wp_register_style( 'top-home-carousel', get_template_directory_uri() . '/css/top-home-carousel.css' );
+    wp_register_style( 'hero', get_template_directory_uri() . '/css/home-hero_module.css' );
 
 
     // Global styles 
-    wp_enqueue_style( 'newsletter' );
-    wp_enqueue_style( 'fancybox' );
-    wp_enqueue_style( 'social');
 
-    // Global scripts
- 
+    if(is_home()) {
+      wp_enqueue_style( 'hero' );
+      wp_enqueue_script( 'home' );
+      
+    }
 
     if(is_single()) {
       wp_enqueue_style( 'single-basic' );

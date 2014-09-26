@@ -13,7 +13,7 @@ Tags:
    v2.0 | 20110126
    License: none (public domain)
 */
-
+html {font-size:10px !important;}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -57,19 +57,143 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* clearfix */
+.clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix {display:inline-block;}
+.clearfix {display:block;}
 
+a {
+  color:inherit;
+  font-family:inherit;
+  text-decoration:none;
+}
 /****************STRUCTURE***************/
 
+#container {
+  width:100%;
+  margin:0 auto;
+  background-color:#fff;
+  height:100%;
+}
 
+/* gridframework */
+.full_wide {
+  width:100%;
+  max-width:934px;
+  margin:0 auto;
+}
+.page_wide {
+  width:100%;
+}
+.column {
+  padding-left:20px; 
+  float:left; 
+  position:relative;
+}
+.column_1{width:32%; /*298px*/}
+.column_2{width:66% ; /*616px*/}
+.column_3{
+  width: 100%;
+  max-width:934px;
+}
 
+/****************GLOBAL***************/
 
-
-
-
-
-
-
-
+/* social icons */
+.social .social_icon {
+  background:url('images/social-sprite@2x.png') 0 0 no-repeat;
+  background-size:cover;
+  width:1.7rem;
+  height:1.6rem;
+  display:inline-block;
+  text-indent:-9999em;
+  margin-right:4.2rem;
+  overflow:hidden;
+}
+.social .social_icon#twitter {
+  background-position: -3.2rem 0;
+  width: 1.9rem;
+}
+.social .social_icon#facebook {
+  background-position: -2rem 0;
+  width: .9rem;
+}
+.social.invert .social_icon#instagram {
+  background-position: -5rem 0;
+}
+.social.invert .social_icon#twitter {
+  background-position: -8.2rem 0;
+}
+.social.invert .social_icon#facebook {
+  background-position: -7rem 0;
+}
+/* button */
+.button {
+  display:inline-block;
+  width:auto;
+  background-color:#bdb38e;
+  color:#fff;
+  text-transform:uppercase;
+  font-family:Arial, sans-serif;
+  font-weight:bold;
+  padding:1.5rem 2.3rem;
+  font-size:1.4rem;
+  border-radius:5px;
+}
+.button:hover {
+  background-color:#8a836a;
+}
+/****************HEADER***************/
+.sticky-wrapper {
+  width:100%;
+}
+header {
+  width:100%;
+  position:fixed;
+  padding-top:3.3rem;
+  top:0;
+  left:0;
+  right:0;
+}
+header.scrolled {
+  background-color:rgba(0, 0, 0, .85);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  padding:1.7rem 0;
+}
+header nav {
+  width:100%;
+  max-width:934px;
+  margin:0 auto;
+}
+header h4 {
+  font-size:4.5rem;
+  text-transform:uppercase;
+  font-family:Arial, sans-serif;
+  font-weight:bold;
+  display:inline-block;
+  float:left;
+  color:#bdb38e;
+}
+header.scrolled h4 {
+  color:#fff;
+  font-size:3rem;
+  margin-top:.9rem;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+header .social {
+  display:inline-block;
+  float:right;
+  width:auto;
+}
+header .social .social_icon {
+  vertical-align:sub;
+}
 
 
 
