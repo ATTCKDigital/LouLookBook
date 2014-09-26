@@ -151,6 +151,7 @@ span {
   padding:1.5rem 2.3rem;
   font-size:1.4rem;
   border-radius:5px;
+  text-align:center;
 }
 .button:hover {
   background-color:#8a836a;

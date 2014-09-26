@@ -36,11 +36,13 @@
 
     // Other scripts
     wp_register_script( 'home', get_template_directory_uri() . '/js/scripts_home.js', array( 'jquery' ), '', true);
+    wp_register_script( 'ipad-slideshow', get_template_directory_uri() . '/js/vendors/jquery.slides.min.js', array( 'home' ), '', true);
 
 
     // Other stylesheets
     wp_register_style( 'hero', get_template_directory_uri() . '/css/home-hero_module.css' );
     wp_register_style( 'latest', get_template_directory_uri() . '/css/home-latest-posts_module.css' );
+    wp_register_style( 'ipad-slideshow', get_template_directory_uri() . '/css/home-ipad-slideshow_module.css' );
 
 
     // Global styles 
@@ -48,7 +50,9 @@
     if(is_home()) {
       wp_enqueue_style( 'hero' );
       wp_enqueue_style( 'latest' );
+      wp_enqueue_style( 'ipad-slideshow' );
       wp_enqueue_script( 'home' );
+      wp_enqueue_script( 'ipad-slideshow' );
       
     }
 
