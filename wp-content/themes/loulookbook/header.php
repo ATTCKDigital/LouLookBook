@@ -17,12 +17,12 @@
 
 <?php wp_head(); ?>
 </head>
-<body>
+<body class="pagetype-<?php if(is_home()){ echo 'home';}elseif(is_category()){echo 'category';}else{echo 'article';}?>">
   <section id="top_container" class="page_wide">
     <header>
       <nav class="clearfix">
         <h4><a href="/">Lou</a></h4>
-        <div class="social">
+        <div class="social<?php if(!(is_home())){ echo ' invert';}?>">
           <a href="" class="social_icon" target="_blank" id="instagram">Instagram</a>
           <a href="" class="social_icon" target="_blank" id="facebook">Facebook</a>
           <a href="" class="social_icon" target="_blank" id="twitter">Twitter</a>

@@ -131,6 +131,10 @@ span {
   background-position: -2rem 0;
   width: .9rem;
 }
+.social .social_icon#link {
+  background-position: -10.3rem 0;
+  width: 2.1rem;
+}
 .social.invert .social_icon#instagram {
   background-position: -5rem 0;
 }
@@ -167,14 +171,15 @@ header {
   top:0;
   left:0;
   right:0;
-  z-index:3;
+  z-index:100;
   background-color:transparent;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-header.scrolled {
+header.scrolled,
+ {
   background-color:rgba(0, 0, 0, .85);
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
@@ -200,6 +205,7 @@ header h4 {
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
+.pagetype-article header h4,
 header.scrolled h4 {
   color:#fff;
   font-size:3rem;
@@ -217,10 +223,73 @@ header .social {
 header .social .social_icon {
   vertical-align:sub;
 }
+.pagetype-article header,
+.pagetype-article header h4 {
+  -webkit-transition-duration: 0;
+  -moz-transition-duration: 0;
+  -o-transition-duration: 0;
+  transition-duration: 0;
+}
+.pagetype-article header {
+  padding:1.7rem 0;
+  background-color:#000;
+}
 
-
-
-
+/****************HEADER***************/
+footer {
+  background-color:#000;
+  padding:5.6rem 0 1.8rem;
+}
+footer .footer_content .contact_info {
+  float:left;
+  width:32%;
+  margin-bottom:10rem;
+}
+footer .footer_content .contact_info:nth-child(3){
+  width:36%;
+}
+footer .footer_content .contact_info h3,
+footer .footer_content .contact_info span {
+  color:#bdb38e;
+  font-size:1.4rem;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+footer .footer_content .contact_info h3 {
+  margin-bottom:2.6rem;
+}
+footer .footer_content small {
+  color:#e8e6e2;
+  display:block;
+  clear:both;
+  font-size:1.4rem;
+}
+footer .footer_content small a {
+  color:#bdb38e;
+  text-decoration:underline;
+}
+footer .footer_content .contact_info p {
+  color:#fff;
+  font-size:1.4rem;
+  line-height:1.4rem;
+  margin-bottom:1.7rem;  
+}
+footer .footer_content .contact_info .email {
+  border:none;
+  background-color:#3b3b3b;
+  color:#999999;
+  font-size:1.4rem;
+  font-family:Arial;
+  width:20.8rem;
+  border-radius:5px;
+  padding:1.5rem 1.2rem;
+  float:left;
+  margin-right:1rem;
+}
+footer .footer_content .contact_info .button {
+  float:left;
+  border:0;
+}
 
 
 

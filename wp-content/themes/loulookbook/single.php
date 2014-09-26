@@ -1,66 +1,42 @@
 <?php get_header(); ?>
+  <section class="full_wide">
+  	<article class="clearfix">
 
-	<div id="content">
+  	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+      <?php $image = get_field('top_featured_image');
+        if( !empty($image) ): ?>
+      	<img class="top_image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+      <?php endif; ?>
+      <?php if(get_field('top_featured_video')):?>
+        <div class="video">
+          <?php the_field('top_featured_video');?>
+        </div>
+      <?php endif;?>
+    
+      <header>
+        <div class="article_info">
+          <time datetime="<?php the_time('jS F, Y') ?>"><?php the_time('F d, Y') ?></time>
+          <h1><?php the_title();?></h1>
+          <small class="author"><span>By</span> <?php the_author(); ?></small>
+        </div>
+  		  <?php the_post_thumbnail('full');?>
+      </header>
+      <div class="entry">
+  		  <?php the_content();?>
+  		</div>
+      <div class="share_tools">
+        <?php if(get_field('original_article_link')):?><a href="<?php the_field('original_article_link');?>" target="_blank" class="original">Read Original Article &#x2192;</a><?php endif;?>
+        <span>Share Article</span>
+        <div class="social">
+          <a href="" class="social_icon" target="_blank" id="instagram">Instagram</a>
+          <a href="" class="social_icon" target="_blank" id="facebook">Facebook</a>
+          <a href="" class="social_icon" target="_blank" id="link">Link</a>
+        </div>
+      </div>
+  	<?php endwhile; endif; ?>
 
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+  	</article>
+  </section>
 
-		<div class="post" id="post-<?php the_ID(); ?>">
-			<h1><?php the_title(); ?></h1>
-            <small><?php the_time('jS F, Y') ?> <!-- by <?php the_author() ?> --></small>
-
-			<div class="entry">
-				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
-
-				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-				<?php the_tags( '<p>Tags: ', ', ', '</p>'); ?>
-
-				<p class="postmetadata alt">
-					<small>
-						This entry was posted
-						<?php /* This is commented, because it requires a little adjusting sometimes.
-							You'll need to download this plugin, and follow the instructions:
-							http://binarybonsai.com/archives/2004/08/17/time-since-plugin/ */
-							/* $entry_datetime = abs(strtotime($post->post_date) - (60*120)); echo time_since($entry_datetime); echo ' ago'; */ ?>
-						on <?php the_time('l, F jS, Y') ?> at <?php the_time() ?>
-						and is filed under <?php the_category(', ') ?>.
-						You can follow any responses to this entry through the <?php post_comments_feed_link('RSS 2.0'); ?> feed.
-
-						<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
-							// Both Comments and Pings are open ?>
-							You can <a href="#respond">leave a response</a>, or <a href="<?php trackback_url(); ?>" rel="trackback">trackback</a> from your own site.
-
-						<?php } elseif (!('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
-							// Only Pings are Open ?>
-							Responses are currently closed, but you can <a href="<?php trackback_url(); ?> " rel="trackback">trackback</a> from your own site.
-
-						<?php } elseif (('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
-							// Comments are open, Pings are not ?>
-							You can skip to the end and leave a response. Pinging is currently not allowed.
-
-						<?php } elseif (!('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
-							// Neither Comments, nor Pings are open ?>
-							Both comments and pings are currently closed.
-
-						<?php } edit_post_link('Edit this entry','','.'); ?>
-
-					</small>
-				</p>
-
-			</div>
-		</div>
-
-	<?php comments_template(); ?>
-
-	<?php endwhile; else: ?>
-
-		<p>Sorry, no posts matched your criteria.</p>
-
-<?php endif; ?>
-
-	</div>
-
-<?php include(TEMPLATEPATH."/left.php");?>
-
-<?php include(TEMPLATEPATH."/right.php");?>
 
 <?php get_footer(); ?>

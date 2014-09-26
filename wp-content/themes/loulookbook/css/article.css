@@ -1,0 +1,108 @@
+/****************ARTICLE***************/
+article {
+  margin:22.3rem auto 15rem;
+  width:69%;
+}
+.pagetype-article article header {
+  position:relative;
+  background-color:transparent;
+  padding:0;
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+}
+article img.top_image {
+  width:42%;
+  height:auto;
+  margin:0 auto 4rem;
+  display:block;
+}
+article .video {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+  margin:0 auto 4rem;
+}
+article .video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+article .article_info {
+  width:60%;
+}
+article .article_info time,
+article .article_info .author {
+  font-size:1.4rem;
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#333;
+  display:block;
+}
+article .article_info h1 {
+  font-size:2.8rem;
+  color:#333;
+  margin-bottom:.2rem;
+}
+article .article_info .author {
+  text-transform:none;
+  color:#bdb38e;
+}
+article .article_info .author span {
+  color:#333;
+}
+
+article .wp-post-image {
+  width:auto;
+  max-width:40%;
+}
+article .entry {
+  clear:both;
+}
+article .entry p {
+  font-size:1.4rem;
+  line-height:2.3rem;
+  color:#333;
+  margin:2.5rem 0 1.5rem;
+}
+article .entry p:last-of-type {
+  margin-bottom:2.5rem;
+}
+article .share_tools {
+  width:100%;
+}
+article .share_tools a,
+article .share_tools span {
+  font-size:1.4rem;
+  color:#bdb38e;
+  display:inline-block;
+}
+article .share_tools a.original {
+  margin-right:4.6rem;
+}
+article .share_tools span {
+  margin-right:2.5rem;
+}
+article .share_tools .social {
+  display:inline;
+  vertical-align:-3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
