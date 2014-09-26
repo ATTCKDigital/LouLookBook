@@ -69,6 +69,10 @@ a {
   font-family:inherit;
   text-decoration:none;
 }
+span {
+  color:inherit;
+  font-family:inherit;
+}
 /****************STRUCTURE***************/
 
 #container {
@@ -93,7 +97,7 @@ a {
   float:left; 
   position:relative;
 }
-.column_1{width:32%; /*298px*/}
+.column_1{width:31%; /*298px*/}
 .column_2{width:66% ; /*616px*/}
 .column_3{
   width: 100%;
@@ -101,6 +105,11 @@ a {
 }
 
 /****************GLOBAL***************/
+/*typography*/
+.read_more {
+  font-size:2rem;
+  color:#bdb38e;
+}
 
 /* social icons */
 .social .social_icon {
@@ -146,6 +155,7 @@ a {
 .button:hover {
   background-color:#8a836a;
 }
+
 /****************HEADER***************/
 
 header {

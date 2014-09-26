@@ -1,0 +1,38 @@
+/****************HOME HERO***************/
+.latest {
+  border-top:1px solid #e8e6e2;
+  border-bottom:1px solid #e8e6e2;
+  padding:2.5rem 0 3.1rem;
+}
+.latest h2 {
+  color:#999999;
+  font-size:1.4rem;
+  text-transform:uppercase;
+  font-weight:bold;
+  text-align:center;
+  font-family:Arial;
+  margin-bottom:1.5rem;
+}
+.latest article {
+  text-align:center;
+}
+.latest article img {
+  display:block;
+  margin:0 auto;
+}
+.latest article .logo_wrap {
+  display:block;
+  width:100%;
+  border-right:1px solid #e8e6e2;
+  padding:1rem 0;
+}
+.latest article:last-child .logo_wrap {
+  border:none;
+}
+.latest article .read_more {
+  font-size:1.2rem;
+  text-align:center;
+  display:inline-block;
+}
+
+

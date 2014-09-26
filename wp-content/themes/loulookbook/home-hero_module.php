@@ -6,7 +6,7 @@
       'posts_per_page' => 1
     );
     $query = new WP_Query( $args );
-    if (have_posts()) : while (have_posts()) : the_post();
+    if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
   ?>
     <article>
       <div class="logo_date">

@@ -40,12 +40,14 @@
 
     // Other stylesheets
     wp_register_style( 'hero', get_template_directory_uri() . '/css/home-hero_module.css' );
+    wp_register_style( 'latest', get_template_directory_uri() . '/css/home-latest-posts_module.css' );
 
 
     // Global styles 
 
     if(is_home()) {
       wp_enqueue_style( 'hero' );
+      wp_enqueue_style( 'latest' );
       wp_enqueue_script( 'home' );
       
     }

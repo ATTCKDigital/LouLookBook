@@ -1,6 +1,6 @@
 /****************HOME HERO***************/
 .hero {
-  margin-top:7.8rem;
+  margin:7.8rem auto 5.6rem;
 }
 .hero .hero_image {
   position:absolute;
@@ -32,9 +32,5 @@
   margin-bottom:1.5rem;
 }
 
-.hero a {
-  font-size:2rem;
-  color:#bdb38e;
-}
 
 
