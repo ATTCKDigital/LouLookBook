@@ -29,13 +29,13 @@ jQuery(document).ready(function($) {
       },
       play: {
         active: true,
-        effect: "slide",
+        effect: "fade",
         interval: 3000,
         auto: true,
         swap: true
       },
       effect: {
-        slide: {
+        fade: {
           // Slide effect settings.
           speed: 2000
             // [number] Speed in milliseconds of the slide animation.

@@ -1,9 +1,13 @@
 /****************HOME GLOBAL***************/
+.feature_box {
+  text-align:center;
+}
 .feature_box .red_line {
   border-top:3px solid #ed6346;
   width:6.8rem;
   display:block;
-  margin-bottom:2.4rem;
+  margin:0 auto 2.4rem;
+  text-align:center;
 }
 .feature_box h2 {
   color:#333333;
@@ -17,5 +21,5 @@
 .feature_box p {
   font-size:1.6rem;
   line-height:2.2rem;
-  margin-bottom:4rem;
+  margin-bottom:0;
 }

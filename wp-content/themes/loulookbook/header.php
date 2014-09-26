@@ -18,7 +18,7 @@
 <?php wp_head(); ?>
 </head>
 <body>
-  <div id="container">
+  <section id="top_container" class="page_wide">
     <header>
       <nav class="clearfix">
         <h4><a href="/">Lou</a></h4>

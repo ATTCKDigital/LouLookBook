@@ -6,8 +6,15 @@
 .ipad_slideshow article {
   width:32%;
   margin-top:18.5rem;
+  text-align:left;
 }
-
+.ipad_slideshow article .red_line {
+  text-align:left;
+  margin:0 0 2.4rem 0;
+}
+.ipad_slideshow article p {
+  margin-bottom:4rem;
+}
 .ipad_slideshow article .button {
   min-width:70%;
 }
