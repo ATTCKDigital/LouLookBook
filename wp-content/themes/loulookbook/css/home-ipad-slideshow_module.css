@@ -7,26 +7,7 @@
   width:32%;
   margin-top:18.5rem;
 }
-.ipad_slideshow article .red_line {
-  border-top:3px solid #ed6346;
-  width:6.8rem;
-  display:block;
-  margin-bottom:2.4rem;
-}
-.ipad_slideshow article h2 {
-  color:#333333;
-  font-size:2.2rem;
-  line-height:2.7rem;
-  text-transform:uppercase;
-  font-weight:bold;
-  font-family:Arial;
-  margin-bottom:1.5rem;
-}
-.ipad_slideshow article p {
-  font-size:1.6rem;
-  line-height:2.2rem;
-  margin-bottom:4rem;
-}
+
 .ipad_slideshow article .button {
   min-width:70%;
 }

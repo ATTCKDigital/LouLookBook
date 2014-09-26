@@ -40,17 +40,21 @@
 
 
     // Other stylesheets
+    wp_register_style( 'home', get_template_directory_uri() . '/css/home.css' );
     wp_register_style( 'hero', get_template_directory_uri() . '/css/home-hero_module.css' );
     wp_register_style( 'latest', get_template_directory_uri() . '/css/home-latest-posts_module.css' );
     wp_register_style( 'ipad-slideshow', get_template_directory_uri() . '/css/home-ipad-slideshow_module.css' );
+    wp_register_style( 'designer-library', get_template_directory_uri() . '/css/home-designer-library_module.css' );
 
 
     // Global styles 
 
     if(is_home()) {
+      wp_enqueue_style( 'home' );
       wp_enqueue_style( 'hero' );
       wp_enqueue_style( 'latest' );
       wp_enqueue_style( 'ipad-slideshow' );
+      wp_enqueue_style( 'designer-library' );
       wp_enqueue_script( 'home' );
       wp_enqueue_script( 'ipad-slideshow' );
       

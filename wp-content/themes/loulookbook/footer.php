@@ -1,5 +1,3 @@
-<!-- close container -->
-</div>
 <footer>
 
 <!-- credit links are not required to remain intact, but is appreciated. Thanks! -->

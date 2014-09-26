@@ -1,3 +1,4 @@
+<!-- homepage latest posts module -->
 <section class="latest full_wide clearfix">
   <h2>See what others are saying</h2>
   <?php

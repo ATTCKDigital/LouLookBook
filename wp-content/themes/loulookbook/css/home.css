@@ -1,0 +1,21 @@
+/****************HOME GLOBAL***************/
+.feature_box .red_line {
+  border-top:3px solid #ed6346;
+  width:6.8rem;
+  display:block;
+  margin-bottom:2.4rem;
+}
+.feature_box h2 {
+  color:#333333;
+  font-size:2.2rem;
+  line-height:2.7rem;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-family:Arial;
+  margin-bottom:1.5rem;
+}
+.feature_box p {
+  font-size:1.6rem;
+  line-height:2.2rem;
+  margin-bottom:4rem;
+}

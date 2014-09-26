@@ -1,3 +1,4 @@
+<!-- homepage ipad slideshow -->
 <section class="ipad_slideshow full_wide clearfix">
   
   <?php
@@ -6,8 +7,8 @@
     'post__in' => array(19)
     );
   query_posts($args);
-  ?>
-  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+  
+  if (have_posts()) : while (have_posts()) : the_post(); ?>
   <?php
     $images = get_field('gallery');
     if( $images ): ?>
@@ -21,9 +22,9 @@
       </div>
       <!-- end ipad slideshow -->
   <?php endif; ?>
-  <article>
+  <article class="feature_box">
     <mark class="red_line"></mark>
-    <?php if(get_field('cta_button_text')):?>
+    <?php if(get_field('title')):?>
       <h2><?php the_field('title');?></h2>
     <?php endif;?>
     <?php the_content();?>
