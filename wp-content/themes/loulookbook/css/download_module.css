@@ -1,36 +1,19 @@
-/****************HOME LATEST POSTS***************/
-.hero {
-  margin:7.8rem auto 5.6rem;
+/****************DOWNLOAD MODULE***************/
+.download {
+  border-top:1px solid #e8e6e2;
+  padding:7rem 0;
 }
-.hero .hero_image {
-  position:absolute;
-  top:-3.3rem;
-  right:11.6%;
+.download .download_link {
+  background:url('../images/appstore@2x.png') 0 0 no-repeat;
+  background-size:contain;
+  width:24.4rem;
+  height:8.2rem;
+  display:block;
+  text-indent:-9999em;
+  overflow:hidden;
+  margin:0 auto;
 }
-.hero article {
-  z-index:1;
-  position:relative;
-  width:37%;
-  padding-top:34.2rem;
+.download .feature_box h2 {
+  margin-bottom:3.3rem;
 }
-.hero .logo_date {
-  display:flex;
-  align-items:flex-end;
-  justify-content:space-between;
-  margin-bottom:1rem;
-}
-.hero .logo_date time {
-  font-size:1.4rem;
-  display:inline-block;
-  text-align:right;
-  vertical-align:middle;
-}
-.hero p {
-  clear:both;
-  font-size:2.6rem;
-  line-height:3.3rem;
-  margin-bottom:1.5rem;
-}
-
-
 

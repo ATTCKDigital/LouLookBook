@@ -1,4 +1,7 @@
 /****************HOME FEATURE BULLETS***************/
+.featured_bullets {
+  margin-bottom:8.6rem;
+}
 .featured_bullets .feature img {
   margin:0 auto 2.5rem;
   width:auto;
