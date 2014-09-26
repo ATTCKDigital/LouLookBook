@@ -1,10 +1,40 @@
-
 /****************HOME HERO***************/
+.hero {
+  margin-top:7.8rem;
+}
+.hero .hero_image {
+  position:absolute;
+  top:-3.3rem;
+  right:11.6%;
+}
+.hero article {
+  z-index:1;
+  position:relative;
+  width:37%;
+  padding-top:34.2rem;
+}
+.hero .logo_date {
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  margin-bottom:1rem;
+}
+.hero .logo_date time {
+  font-size:1.4rem;
+  display:inline-block;
+  text-align:right;
+  vertical-align:middle;
+}
+.hero p {
+  clear:both;
+  font-size:2.6rem;
+  line-height:3.3rem;
+  margin-bottom:1.5rem;
+}
 
-
-
-
-
-
+.hero a {
+  font-size:2rem;
+  color:#bdb38e;
+}
 
 

@@ -23,19 +23,12 @@
   }
   // Changing excerpt length
   function new_excerpt_length($length) {
-    return 20;
+    return 50;
   }
   add_filter('excerpt_length', 'new_excerpt_length');
 
-  // Changing excerpt more
-  function new_excerpt_more($more) {
-    if (is_category('travel')) {
-      return '[&hellip;]';
-    } else {
-      return '&hellip;';
-    }
-  }
-  add_filter('excerpt_more', 'new_excerpt_more');
+  
+  
   
   
   function scripts_styles()

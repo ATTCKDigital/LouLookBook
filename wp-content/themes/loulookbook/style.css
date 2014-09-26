@@ -33,6 +33,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	color:#121212;
+  
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -81,6 +83,7 @@ a {
   width:100%;
   max-width:934px;
   margin:0 auto;
+  position:relative;
 }
 .page_wide {
   width:100%;
@@ -144,9 +147,7 @@ a {
   background-color:#8a836a;
 }
 /****************HEADER***************/
-.sticky-wrapper {
-  width:100%;
-}
+
 header {
   width:100%;
   position:fixed;
@@ -154,6 +155,7 @@ header {
   top:0;
   left:0;
   right:0;
+  z-index:1;
 }
 header.scrolled {
   background-color:rgba(0, 0, 0, .85);
