@@ -3,48 +3,19 @@
 
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+<meta name="viewport" content="initial-scale=1, width=device-width"> 
 
 <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; Blog Archive <?php } ?> <?php wp_title(); ?></title>
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<!--[if lt IE 9]>
+<script src="<?php echo get_template_directory_uri() . '/dist/html5shiv.js'; ?>"></script>
+<![endif]-->
 
-<style type="text/css" media="screen">
-
-</style>
 
 <?php wp_head(); ?>
 </head>
 <body>
-<div id="container">
-
-<div id="navigation">
-
-<div id="menu"><ul><?php wp_list_pages('title_li=&depth=1'); ?></ul></div>
-
-<?php
-  if($post->post_parent)
-  $children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0");
-  else
-  $children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0");
-  if ($children) { ?>
-
-<!-- Sub Menu -->
-
-  
-  <div id="submenu">
-  <ul>
-  <?php echo $children; ?>
-  </ul>
-
-  </div> <!-- / Sub Menu -->
-
-  <?php } ?>
-  
-</div><!-- End navigation -->
-
-<div id="header">
-		<h2><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h2>
-		<h3><?php bloginfo('description'); ?></h3>
-</div>
+  <div id="container">
