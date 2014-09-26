@@ -1,0 +1,17 @@
+/****************ARCHIVE***************/
+.archive {
+  margin:22.3rem auto 15rem;
+}
+.archive h1 {
+  color:#333333;
+  font-size:2.2rem;
+  line-height:2.7rem;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-family:Arial;
+  margin-bottom:4rem;
+  text-align:center;
+}
+.archive article {
+  margin:0 auto;
+}

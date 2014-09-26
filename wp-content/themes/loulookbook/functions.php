@@ -1,5 +1,9 @@
 <?php
+  if ( function_exists( 'add_theme_support' ) ) { // Added in 2.9
+    add_theme_support( 'post-thumbnails' );
+    set_post_thumbnail_size( 450, 300, true );
 
+  }
   
   function scripts_styles()
   {
@@ -18,6 +22,7 @@
     wp_register_style( 'feature-bullets', get_template_directory_uri() . '/css/home-feature-bullets_module.css' );
     wp_register_style( 'download', get_template_directory_uri() . '/css/download_module.css' );
     wp_register_style( 'article', get_template_directory_uri() . '/css/article.css' );
+    wp_register_style( 'archive', get_template_directory_uri() . '/css/archive.css' );
 
 
     // Global styles 
@@ -38,7 +43,12 @@
     if(is_single() || is_page()) {
       wp_enqueue_style( 'article' );
     }
-
+    
+    if(is_category()) {
+      wp_enqueue_style( 'article' );
+      wp_enqueue_style( 'archive' );
+      
+    }
 
   }
   add_action( 'wp_enqueue_scripts', 'scripts_styles' );

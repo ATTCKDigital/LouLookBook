@@ -12,17 +12,20 @@ article {
   justify-content:space-between;
 }
 article img.top_image {
-  width:42%;
+  width:61%;
   height:auto;
   margin:0 auto 4rem;
   display:block;
+}
+article .video_wrapper {
+  width:61%;
+  margin:0 auto 4rem;
 }
 article .video {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
-  margin:0 auto 4rem;
 }
 article .video iframe {
 	position: absolute;

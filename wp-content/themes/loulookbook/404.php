@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<?php include(TEMPLATEPATH."/left.php");?>
 
 	<div id="content">
 
@@ -7,6 +6,5 @@
 
 	</div>
 
-<?php include(TEMPLATEPATH."/right.php");?>
 
 <?php get_footer(); ?>

@@ -1,29 +1,22 @@
-<?php
-/*
-Template Name: Archives
-*/
-?>
-
 <?php get_header(); ?>
+  <section class="full_wide archive">
+  	<article class="clearfix">
+      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    	
 
-<div id="content">
+      <header>
+        <div class="article_info">
+          <h1><?php the_title();?></h1>
+        </div>
+      </header>
+      <div class="entry">
+  		  <?php the_content();?>
+      </div>
+  	<?php endwhile; ?>
+		
+  	<?php endif; ?>
 
-<?php include (TEMPLATEPATH . '/searchform.php'); ?>
-
-<h2>Archives by Month:</h2>
-	<ul>
-		<?php wp_get_archives('type=monthly'); ?>
-	</ul>
-
-<h2>Archives by Subject:</h2>
-	<ul>
-		 <?php wp_list_categories(); ?>
-	</ul>
-
-</div>
-
-<?php include(TEMPLATEPATH."/left.php");?>
-
-<?php include(TEMPLATEPATH."/right.php");?>
-
+  	</article>
+  </section>
+	
 <?php get_footer(); ?>
