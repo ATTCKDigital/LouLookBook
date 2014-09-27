@@ -24,12 +24,16 @@
   display:inline-block;
   text-align:right;
   vertical-align:middle;
+  font-family:'Museo-Sans', Helvetica, Arial, sans-serif;
+  font-weight:500;
 }
+
 .hero p {
   clear:both;
   font-size:2.6rem;
   line-height:3.3rem;
   margin-bottom:1.5rem;
+  font-family:'Archer-Book', Courier, serif;
 }
 
 

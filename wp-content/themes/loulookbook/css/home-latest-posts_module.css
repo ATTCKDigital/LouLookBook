@@ -10,7 +10,7 @@
   text-transform:uppercase;
   font-weight:bold;
   text-align:center;
-  font-family:Arial;
+  font-family:'HelveticaNeue-CondensedBold', Arial, sans-serif;
   margin-bottom:1.5rem;
 }
 .latest article {

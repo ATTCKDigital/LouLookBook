@@ -110,6 +110,7 @@ span {
 .read_more {
   font-size:2rem;
   color:#bdb38e;
+  font-family:'Archer-Book', Courier, serif;
 }
 
 /* social icons */
@@ -151,12 +152,12 @@ span {
   background-color:#bdb38e;
   color:#fff;
   text-transform:uppercase;
-  font-family:Arial, sans-serif;
-  font-weight:bold;
+  font-family:'HelveticaNeue-CondensedBold', Arial, sans-serif;
   padding:1.5rem 2.3rem;
   font-size:1.4rem;
   border-radius:5px;
   text-align:center;
+  letter-spacing:.05em;
 }
 .button:hover {
   background-color:#8a836a;
@@ -195,8 +196,8 @@ header.global nav {
 header.global h4 {
   font-size:4.5rem;
   text-transform:uppercase;
-  font-family:Arial, sans-serif;
-  font-weight:bold;
+  font-family:'Museo-Sans', Helvetica, Arial, sans-serif;
+  font-weight:900;
   display:inline-block;
   float:left;
   color:#bdb38e;
@@ -239,7 +240,7 @@ header.global .social .social_icon {
   padding:1.7rem 0;
   background-color:rgba(0, 0, 0, .85);
 }
-.pagetype-article header.global h4 {
+.pagetype-article header.global h4 a {
   background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAuCAYAAACMAoEVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGNTQzNUJBRjNCRkQxMUU0OERDNzkzMDk1NUY0NUQ5QiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGNTQzNUJCMDNCRkQxMUU0OERDNzkzMDk1NUY0NUQ5QiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkY1NDM1QkFEM0JGRDExRTQ4REM3OTMwOTU1RjQ1RDlCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkY1NDM1QkFFM0JGRDExRTQ4REM3OTMwOTU1RjQ1RDlCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+RqUb+wAAAWtJREFUeNrc2kFKw0AUBuA0XbkS7AF6AleFQt0KQm/gCQRX2QkewJUbPY3gThC68hLdFkXpusR/YAoSE+3MvEze/x78kIbOKx+ESfPIqK7roqc6RR6QI+QWeSky16gn3Bx5Ro795zUyzY0rM8AKfzxmx7XBXN0gu9y4wl2WQpkjn/Xvuhb8jaCYhUnhVMIkcGphqTjVsBScelgsjgIWg6OBheKoYCE4OtihOErYITha2H84athfOHpYF84ErA1nBtbELZCtFZjLfoayQJ5anqAZa4M8IncO1zUaYK+zcojBTaYaO9wKWSJfRlDOcY+8NjeUtp2yYt1QmidMAUNu4pUFnBlgzB/nygKOHpjysFpZwNECQ748YwOGLqACxiyiAcYupACmLFYPTG2gGijRxAHfNQKlGqkESjZTB5Ru2AW8GnL6JVkzP3A6+XHuA5lYeIPoDbnwoH3thhimlD31dcBz/zKbO74cAvctwADMyGMKxoc0MQAAAABJRU5ErkJggg==') 0 0 no-repeat;
   background-size:contain;
   width:2.7rem;
@@ -267,6 +268,8 @@ footer .footer_content .contact_info span {
   font-size:1.4rem;
   text-transform:uppercase;
   font-weight:bold;
+  font-family:'Museo-Sans', Helvetica, Arial, sans-serif;
+  font-weight:900;
 }
 footer .footer_content .contact_info h3 {
   margin-bottom:2.6rem;
@@ -276,6 +279,8 @@ footer .footer_content small {
   display:block;
   clear:both;
   font-size:1.4rem;
+  font-family:'Museo-Sans', Helvetica, Arial, sans-serif;
+  font-weight:100;
 }
 footer .footer_content small a {
   color:#bdb38e;
@@ -286,13 +291,16 @@ footer .footer_content .contact_info p {
   font-size:1.4rem;
   line-height:1.4rem;
   margin-bottom:1.7rem;  
+  font-family:'Museo-Sans', Helvetica, Arial, sans-serif;
+  font-weight:500;
 }
 footer .footer_content .contact_info .email {
   border:none;
   background-color:#3b3b3b;
   color:#999999;
   font-size:1.4rem;
-  font-family:Arial;
+  font-family:'Museo-Sans', Helvetica, Arial, sans-serif;
+  font-weight:100;
   width:20.8rem;
   border-radius:5px;
   padding:1.5rem 1.2rem;

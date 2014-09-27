@@ -4,8 +4,11 @@
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <meta name="viewport" content="initial-scale=1, width=device-width"> 
+<meta property="og:title" content="<?php the_title();?>"/>
+<meta property="og:url" content="<?php the_permalink();?>"/>
+<meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
 
-<title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; Blog Archive <?php } ?> <?php wp_title(); ?></title>
+<title><?php bloginfo('name'); ?> <?php if ( is_single() ) { echo wp_title(); } elseif (is_category()) {echo '&raquo; Press';} ?></title>
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
@@ -24,12 +27,12 @@
         <?php if(is_home() || is_category()):?>
           <h4><a href="/">Lou</a></h4>
         <?php else: ?>
-          <h4><a href="/">Back</a></h4>
+          <h4><a href="/press">Back</a></h4>
         <?php endif; ?>
         <div class="social<?php if(!(is_home())){ echo ' invert';}?>">
-          <a href="" class="social_icon" target="_blank" id="instagram">Instagram</a>
-          <a href="" class="social_icon" target="_blank" id="facebook">Facebook</a>
-          <a href="" class="social_icon" target="_blank" id="twitter">Twitter</a>
+          <a href="http://instagram.com/loulookbook" class="social_icon" target="_blank" id="instagram">Instagram</a>
+          <a href="https://www.facebook.com/loulookbook" class="social_icon" target="_blank" id="facebook">Facebook</a>
+          <a href="https://twitter.com/loulookbook" class="social_icon" target="_blank" id="twitter">Twitter</a>
           <a href="" class="button">Download Lou</a>
         </div>
       </nav>

@@ -8,7 +8,7 @@
     <div class="contact_info">
       <h3>Press and Contact</h3>
       <p><span>A:</span> Hello@loulookbook.com</p>
-      <p><span>P:</span> Press and Announcements</p>
+      <p><span>P:</span> <a href="/press">Press and Announcements</a></p>
     </div>
     <div class="contact_info">
       <h3>Sign Up For Newsletter</h3>

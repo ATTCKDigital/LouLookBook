@@ -4,6 +4,8 @@
     set_post_thumbnail_size( 450, 300, true );
 
   }
+  if ( function_exists('register_sidebar') )
+  register_sidebar();
   
   function scripts_styles()
   {
@@ -52,4 +54,6 @@
 
   }
   add_action( 'wp_enqueue_scripts', 'scripts_styles' );
+  
+  
 ?>
