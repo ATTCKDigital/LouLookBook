@@ -51,7 +51,6 @@ article .article_info h1,
 .archive article h2 {
   font-size:2.8rem;
   color:#333;
-  margin-bottom:.2rem;
   font-family:'Archer-Medium', Courier, serif;
 }
 
@@ -98,10 +97,54 @@ article .share_tools .social {
   vertical-align:-3px;
 }
 
+/************* ipad & iphone 6+ ************/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px), only screen and (min-device-width : 414px) and (-webkit-device-pixel-ratio: 3) {
+  .share_tools .social .social_icon {
+    height: 2rem;
+    vertical-align: 5px;  
+  }
+  .share_tools .social .social_icon#twitter {
+      background-position: -4.1rem 0;
+      width: 2.3rem;
+  }
+  .share_tools .social .social_icon#facebook {
+      background-position: -2.4rem 0;
+      width: 1.2rem;
+  }
+  .share_tools .social .social_icon#link {
+      background-position: -12.8rem 0;
+      width: 2.8rem;
+  }
+  article .article_info {
+    display:inline-block;
+    width:80%;
+  }
+  article .wp-post-image {
+    display:inline-block;
+    max-width:20%;
+  }
+  
+}
+/************* ipad portrait************/
+@media only screen and (max-width : 768px), only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation:portrait), only screen and (min-device-width : 414px) and (-webkit-device-pixel-ratio: 3){
+  .share_tools .social .social_icon {
+    height: 2rem;
+    vertical-align: 5px; 
+    margin-right:4rem; 
+  }
+  article .entry p {
+    font-size:1.7rem;
+    line-height:2.6rem;
+  }
+  article .share_tools a, 
+  article .share_tools span {
+    font-size:1.7rem;
+  }
+}
 
-
-
-
+@media only screen and (min-device-width : 414px) and (-webkit-device-pixel-ratio: 3) {
+  
+}
 
 
 

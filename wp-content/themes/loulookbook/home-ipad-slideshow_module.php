@@ -9,6 +9,16 @@
   query_posts($args);
   
   if (have_posts()) : while (have_posts()) : the_post(); ?>
+  <article class="feature_box">
+    <mark class="red_line"></mark>
+    <?php if(get_field('title')):?>
+      <h2><?php the_field('title');?></h2>
+    <?php endif;?>
+    <?php the_content();?>
+    <?php if(get_field('cta_button_text')):?>
+      <a href="<?php the_field('cta_button_text_link');?>" title="<?php the_field('cta_button_text');?>" class="button"><?php the_field('cta_button_text');?></a>
+    <?php endif;?>
+  </article>
   <?php
     $images = get_field('gallery');
     if( $images ): ?>
@@ -22,15 +32,6 @@
       </div>
       <!-- end ipad slideshow -->
   <?php endif; ?>
-  <article class="feature_box">
-    <mark class="red_line"></mark>
-    <?php if(get_field('title')):?>
-      <h2><?php the_field('title');?></h2>
-    <?php endif;?>
-    <?php the_content();?>
-    <?php if(get_field('cta_button_text')):?>
-      <a href="<?php the_field('cta_button_text_link');?>" title="<?php the_field('cta_button_text');?>" class="button"><?php the_field('cta_button_text');?></a>
-    <?php endif;?>
   <?php endwhile; endif; wp_reset_query(); ?>
-  </article>
+  
 </section>

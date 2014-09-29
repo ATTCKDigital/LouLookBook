@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
         active: true,
         effect: "fade",
         interval: 3000,
-        auto: true,
+        auto: false,
         swap: true
       },
       effect: {

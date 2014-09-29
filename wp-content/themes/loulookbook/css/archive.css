@@ -24,11 +24,15 @@
 .archive article time {
   float:left;
   width:22%;
+  line-height:2.8rem;
 }
 .archive article .entry {
   float:left;
   width:78%;
   clear:none;
+}
+.archive article .entry h2 {
+  line-height:2.8rem;
 }
 .archive article .entry p {
   float:left;

@@ -1,5 +1,5 @@
 <footer class="page_wide clearfix">
-  <div class="footer_content full_wide">
+  <div class="footer_content full_wide clearfix">
     <div class="contact_info">
       <h3>Location</h3>
       <p><span>A:</span> 54 West 21st, St. 1001</p>
@@ -14,7 +14,7 @@
       <h3>Sign Up For Newsletter</h3>
       <!-- Begin MailChimp Signup Form -->
       <div id="mc_embed_signup">
-        <form action="//attckdigital.us9.list-manage.com/subscribe/post?u=fba80489939b53759b52c03f9&amp;id=7697867bf7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <form action="//attckdigital.us9.list-manage.com/subscribe/post?u=fba80489939b53759b52c03f9&amp;id=7697867bf7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate clearfix" target="_blank" novalidate>
         	<input type="email" placeholder="Enter your email address" name="EMAIL" class="required email" id="mce-EMAIL">
         	<div id="mce-responses" class="clear">
         		<div class="response" id="mce-error-response" style="display:none"></div>
@@ -27,8 +27,8 @@
 
       <!--End mc_embed_signup-->
     </div>
-    <small>&copy; <?php echo date("Y"); ?> LOU. <a href="/terms-of-use">Terms of Use</a> | <a href="/privacy-policy">Privacy Policy</a></small>
   </div>
+  <small>&copy; <?php echo date("Y"); ?> LOU. <a href="/terms-of-use">Terms of Use</a> | <a href="/privacy-policy">Privacy Policy</a></small>
 </footer>
 
 <?php wp_footer(); ?>

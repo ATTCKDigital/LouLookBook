@@ -6,3 +6,26 @@
   margin:0 auto 2.5rem;
   width:auto;
 }
+.featured_bullets .feature img.phone {
+  display:none;
+}
+
+/************* iphone 6************/
+@media only screen and (max-width: 667px), only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .featured_bullets .column_1 {
+    width:70%;
+    float:none;
+    padding:0;
+    margin:0 auto 5rem;
+  }
+  .featured_bullets {
+    margin-bottom:0;
+  }
+  .featured_bullets .feature img {
+    display:none;
+  }
+  .featured_bullets .feature img.phone {
+    display:block;
+    width:98%;
+  }
+}

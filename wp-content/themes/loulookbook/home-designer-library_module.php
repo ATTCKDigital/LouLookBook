@@ -9,7 +9,7 @@
   
   if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="look_book">
-      <?php the_post_thumbnail('full');?>
+      <div class="cropper"><?php the_post_thumbnail('full');?></div>
     </div>
     <article class="feature_box">
       <mark class="red_line"></mark>

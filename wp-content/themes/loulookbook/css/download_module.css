@@ -17,3 +17,14 @@
   margin-bottom:3.3rem;
 }
 
+/************* iphone 6************/
+@media only screen and (max-width: 667px), only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .download .download_link {
+    width:17.4rem;
+    height:5.9rem;
+  }
+  .download {
+    padding:3rem 0;
+  }
+
+}

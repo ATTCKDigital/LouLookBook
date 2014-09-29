@@ -9,6 +9,10 @@
   
   if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="feature">
+      <?php  $image = get_field('iphone_image');
+        if( !empty($image) ): ?>
+      	<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="phone"/>
+      <?php endif; ?>
       <?php the_post_thumbnail('full');?>
     </div>
     

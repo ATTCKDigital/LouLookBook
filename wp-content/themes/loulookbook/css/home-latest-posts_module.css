@@ -35,4 +35,37 @@
   display:inline-block;
 }
 
+/************* ipad landscape************/
+@media only screen and (max-width: 1024px), only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation:landscape){
+  .latest article .read_more span {
+    display:none;
+  }
+
+
+}
+
+/************* iphone 6************/
+@media only screen and (max-width: 667px), only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .latest .column {
+    padding-left:10px;
+  }
+  .latest h2 {
+    font-size:1.8rem;
+  }
+  .latest article img {
+    width:65%;
+    height:auto;
+  }
+  .latest article .read_more {
+    font-size:1.6rem;
+  }
+
+
+
+
+
+}
+
+
+
 

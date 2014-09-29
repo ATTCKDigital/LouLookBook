@@ -43,6 +43,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	margin:0;
+	padding:0;
 }
 ol, ul {
 	list-style: none;
@@ -98,7 +100,7 @@ span {
   float:left; 
   position:relative;
 }
-.column_1{width:31%; /*298px*/}
+.column_1{width:30.5%; /*298px*/}
 .column_2{width:66% ; /*616px*/}
 .column_3{
   width: 100%;
@@ -249,10 +251,10 @@ header.global .social .social_icon {
   text-indent:-9999em;
   overflow:hidden;
 }
-/****************HEADER***************/
+/****************FOOTER***************/
 footer {
-  background-color:#000;
-  padding:5.6rem 0 1.8rem;
+  background-color:#121212;
+  padding:5.6rem 0 0;
 }
 footer .footer_content .contact_info {
   float:left;
@@ -274,15 +276,18 @@ footer .footer_content .contact_info span {
 footer .footer_content .contact_info h3 {
   margin-bottom:2.6rem;
 }
-footer .footer_content small {
+footer small {
   color:#e8e6e2;
   display:block;
   clear:both;
   font-size:1.4rem;
   font-family:'Museo-Sans', Helvetica, Arial, sans-serif;
   font-weight:100;
+  background-color:#1b1b1b;
+  padding:1.8rem 0 1.8rem 2%;
+  width:98%;
 }
-footer .footer_content small a {
+footer small a {
   color:#bdb38e;
   text-decoration:underline;
 }
@@ -310,10 +315,144 @@ footer .footer_content .contact_info .email {
 footer .footer_content .contact_info .button {
   float:left;
   border:0;
+  -webkit-appearance: none;
+}
+/************* ipad and iphone 6+************/
+@media only screen and (max-width: 768px), only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-device-width : 414px) and (-webkit-device-pixel-ratio: 3){
+  html,
+  body{
+      width:100%;
+      overflow-x:hidden;
+  }
+  header.global {
+    padding:1.7rem 0;
+  }
+  header.global h4,
+  header.global.scrolled h4 {
+    margin-top:.9rem;
+    font-size:3rem;
+  }
+  .pagetype-article header.global h4 {
+    margin-top:1.2rem;
+  }
+  .social .social_icon {
+    width:2.5rem;
+    height:2.5rem;
+  }
+  header.global .social .social_icon {
+    vertical-align:.9rem;
+  }
+  .social .social_icon#facebook {
+      background-position: -3rem 0;
+      width: 1.3rem;
+  }
+  .social .social_icon#twitter {
+      background-position: -4.8rem 0;
+      width: 3.1rem;
+  }
+  .social .social_icon#twitter {
+      background-position: -4.8rem 0;
+      width: 3.1rem;
+  }
+  .social.invert .social_icon#instagram {
+    background-position: -8rem 0;
+  }
+  .social.invert .social_icon#facebook {
+    background-position: -10.8rem 0;
+  }
+  .social.invert .social_icon#twitter {
+    background-position: -12.8rem 0;
+  }
+}
+ a
+/************* ipad portrait************/
+@media only screen and (max-width : 768px), only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation:portrait), only screen and (min-device-width : 414px) and (-webkit-device-pixel-ratio: 3) and (orientation:portrait) {
+  .full_wide {
+    width:95%;
+  }
+  .button {
+    font-size:1.8rem;
+  }
 }
 
+/************* small desktop************/
+@media only screen and (max-width : 768px) {
+  html,
+  body{
+      width:100%;
+      overflow-x:visible;
+  }
+  
+  header.global .social .social_icon {
+    vertical-align: -5px;
+  }
+  header.global h4 {
+    margin-top:.9rem;
+    margin-left:1.4rem;
+  }
+  header.global .button {
+    margin-right:1.4rem;
+  }
+  .button {
+    font-size:1.4rem;
+  }
+  footer .footer_content .contact_info .email {
+    width:13.8rem;
+  }
+  footer .footer_content.full_wide {
+    width:95%;
+  }
+}
 
+/************* iphone 6************/
+@media only screen and (max-width: 667px), only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
+  html {font-size:20px !important}
+  html,
+  body{
+      width:100%;
+      overflow-x:hidden;
+  }
+  header .social .social_icon {
+    display:none;
+  }
+  header.global,
+  header.global.scrolled {
+    padding:.8rem 0;
+  }
+  header.global h4,
+  header.global.scrolled h4 {
+    font-size:4.5rem;
+    margin-top:0;
+  }
+  .button {
+    font-size:1.6rem;
+  }
+  footer .footer_content .contact_info {
+    float:none;
+    text-align:center;
+    width:100%;
+    margin:0 auto 4rem;
+  }
+  footer .footer_content .contact_info h3 {
+    margin-bottom:1.6rem;
+  }
+  footer .footer_content .contact_info:nth-child(3) {
+    width:100%;
+  }
+  footer .footer_content .contact_info .email {
+    width:22.8rem;
+  }
+  footer .footer_content .contact_info form {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
 
-
-
-
+/************* tiny browser and non-retina iphone************/
+@media only screen and (max-width: 667px) {
+  html {font-size:10px !important}
+  footer .footer_content .contact_info form {
+    width: 65%;
+  }
+  
+}

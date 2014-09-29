@@ -3,7 +3,7 @@
 
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-<meta name="viewport" content="initial-scale=1, width=device-width"> 
+<!-- <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">  -->
 <meta property="og:title" content="<?php the_title();?>"/>
 <meta property="og:url" content="<?php the_permalink();?>"/>
 <meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
@@ -33,7 +33,7 @@
           <a href="http://instagram.com/loulookbook" class="social_icon" target="_blank" id="instagram">Instagram</a>
           <a href="https://www.facebook.com/loulookbook" class="social_icon" target="_blank" id="facebook">Facebook</a>
           <a href="https://twitter.com/loulookbook" class="social_icon" target="_blank" id="twitter">Twitter</a>
-          <a href="" class="button">Download Lou</a>
+          <a href="" class="button">Download<?if(!(wp_is_mobile())):?> Lou<?php endif;?></a>
         </div>
       </nav>
     </header>

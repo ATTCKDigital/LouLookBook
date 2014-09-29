@@ -26,6 +26,7 @@
   vertical-align:middle;
   font-family:'Museo-Sans', Helvetica, Arial, sans-serif;
   font-weight:500;
+  
 }
 
 .hero p {
@@ -35,6 +36,67 @@
   margin-bottom:1.5rem;
   font-family:'Archer-Book', Courier, serif;
 }
+
+/************* ipad ************/
+@media only screen and (max-width : 768px), only screen and (min-device-width : 768px) and (max-device-width : 1024px), only screen and (min-device-width : 414px) and (-webkit-device-pixel-ratio: 3) {
+  .hero .logo_date time {
+    width:70%;
+  }
+  .hero .logo_date img {
+    width:28%;
+    height:auto;
+    
+  }
+
+}
+/************* ipad portrait************/
+@media only screen and (max-width : 768px), only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation:portrait){
+  
+  .hero .hero_image {
+    right:0;
+  }
+  .hero p {
+    font-size:2rem;
+    line-height:2.7rem;
+  }
+}
+
+/************* iphone 6************/
+@media only screen and (max-width: 667px), only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .hero .hero_image {
+    position:absolute;
+    width:100%;
+    right:0;
+  }
+  .hero article {
+    width:90%;
+    margin:0 auto;
+    text-align:center;
+    padding-top:40rem;
+  }
+  .hero .logo_date {
+    display:block;
+  }
+  .hero .logo_date img {
+    width:30%;
+    height:auto;
+    display:block;
+    margin:0 auto 3rem;
+  }
+  .hero .logo_date time {
+    display:block;
+    float:none;
+    text-align:center;
+  }
+
+}
+
+
+
+
+
+
+
 
 
 
