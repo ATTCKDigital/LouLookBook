@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
 	 */
 	if(pageNum <= max) {
 		// Insert the "More Posts" link.
-		$('#load_more').after('<section class="pbd-alp-placeholder-'+ pageNum +' archive_list"></section>');
+		$('.archive_list').after('<section class="pbd-alp-placeholder-'+ pageNum +' archive_list"></section>');
 		$('.more_download').prepend('<a href="#" class="button" id="pbd-alp-load-posts">Load More</a>');
 			
 		// Remove the traditional navigation.

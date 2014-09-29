@@ -7,8 +7,8 @@
             <time datetime="<?php the_time('M d') ?>"><?php the_time('M d') ?></time>
             <div class="entry">
         		  <h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
-              <a href="<?php the_permalink();?>" class="post_image"><?php the_post_thumbnail('full');?></a>
               <?php the_excerpt();?>
+              <a href="<?php the_permalink();?>" class="post_image"><?php the_post_thumbnail('full');?></a>
         		  <a class="read_more" href="<?php the_permalink();?>"><span>Read More </span>&#x2192;</a>
             </div>
           

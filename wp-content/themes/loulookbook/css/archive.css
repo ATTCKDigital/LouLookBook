@@ -81,3 +81,56 @@
   margin-bottom:2rem;
   background-size:contain;
 }
+/************* iphone************/
+@media only screen and (max-width: 667px), only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .archive {
+    margin-top:15rem;
+    margin-bottom:10rem;
+    width:100%;
+  }
+  .archive article {
+    width:95%;
+    text-align:center;
+  }
+  .archive article time {
+    width:100%;
+    float:none;
+  }
+  .archive article h2 {
+    font-size:3rem;
+  }
+  .archive article .entry,
+  .archive article .entry p {
+    width:100%;
+    float:none;
+    margin-top:0;
+  }
+  .archive article .entry .read_more {
+    display:none;
+  }
+  .archive .button {
+    margin-top:.5rem;
+  }
+  .archive article .entry a.post_image {
+    float:none;
+    width:100%;
+  }
+  .archive article .entry a.post_image img {
+    width:30%;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

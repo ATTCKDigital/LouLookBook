@@ -98,7 +98,7 @@ article .share_tools .social {
 }
 
 /************* ipad & iphone 6+ ************/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px), only screen and (min-device-width : 414px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px), only screen and (min-device-width : 414px) and (-webkit-device-pixel-ratio: 3), only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
   .share_tools .social .social_icon {
     height: 2rem;
     vertical-align: 5px;  
@@ -125,7 +125,7 @@ article .share_tools .social {
   }
   
 }
-/************* ipad portrait************/
+/************* ipad portrait and iphone 6+ ************/
 @media only screen and (max-width : 768px), only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation:portrait), only screen and (min-device-width : 414px) and (-webkit-device-pixel-ratio: 3){
   .share_tools .social .social_icon {
     height: 2rem;
@@ -142,7 +142,67 @@ article .share_tools .social {
   }
 }
 
-@media only screen and (min-device-width : 414px) and (-webkit-device-pixel-ratio: 3) {
+/************* iphone************/
+@media only screen and (max-width: 667px), only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
+  article {
+    margin-top:15rem;
+    width:85%;
+  }
+  article img.top_image {
+    width:70%;
+    margin-bottom:6rem;
+  }
+  article .article_info {
+    width:100%;
+    text-align:center;
+  }
+  article time {
+    margin-bottom:1rem;
+    font-size:1.6rem;
+  }
+  article h1 {
+    font-size:3rem;
+    margin-bottom:3rem;
+  }
+  article .wp-post-image {
+    width:30%;
+    height:auto;
+    margin:0 auto 4rem;
+    display:block;
+    max-width:100%;
+  }
+  article .entry p {
+    font-size:1.6rem;
+    line-height:2.5rem;
+    text-align:center;
+  }
+  article .entry p:first-child {
+    margin-top:0;
+  }
+  article .entry p:last-of-type {
+    margin-bottom:5rem;
+  }
+  article .share_tools a.original,
+  article .share_tools span {
+    display:block;
+    font-size:1.8rem;
+    text-align:center;
+    margin-right:0;
+  }
+  article .share_tools a {
+    margin-bottom:2rem;
+  }
+  article .share_tools span {
+    margin-bottom:1rem;
+  }
+  article .share_tools .social {
+    text-align:center;
+    width: 100%;
+    display:block;
+  }
+  article .share_tools .social #link {
+    margin-right:0;
+  }
   
 }
 
