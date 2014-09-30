@@ -1,5 +1,5 @@
 <!-- homepage ipad slideshow -->
-<section class="ipad_slideshow full_wide clearfix">
+<section class="ipad_slideshow page_wide clearfix">
   
   <?php
   $args = array(
