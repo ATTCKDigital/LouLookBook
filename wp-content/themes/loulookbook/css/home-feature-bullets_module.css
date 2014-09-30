@@ -4,7 +4,8 @@
 }
 .featured_bullets .feature img {
   margin:0 auto 2.5rem;
-  width:auto;
+  width:100%;
+  height:auto;
 }
 .featured_bullets .feature img.phone {
   display:none;
