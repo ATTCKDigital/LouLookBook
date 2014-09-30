@@ -8,6 +8,23 @@ version:
 Tags: 
 */
 
+@font-face { font-family: 'Museo-Sans';
+src: url('fonts/MuseoSans-100.eot?#iefix') format('embedded-opentype'), url('fonts/museosans_100-webfont.woff') format('woff'), url('fonts/museosans_100-webfont.ttf') format('truetype'), url('fonts/museosans_100-webfont.svg#MuseoSans-100') format('svg'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Museo-Sans';
+src: url('fonts/MuseoSans-700.eot?#iefix') format('embedded-opentype'), url('fonts/museosans_700-webfont.woff') format('woff'), url('fonts/museosans_700-webfont.ttf') format('truetype'), url('fonts/museosans_700-webfont.svg#MuseoSans-700') format('svg'); font-weight: 700; font-style: normal; }
+
+@font-face { font-family: 'Museo-Sans';
+src: url('fonts/MuseoSans-900.eot?#iefix') format('embedded-opentype'), url('fonts/museosans_900-webfont.woff') format('woff'), url('fonts/museosans_900-webfont.ttf') format('truetype'), url('fonts/museosans_900-webfont.svg#MuseoSans-900') format('svg'); font-weight: 900; font-style: normal; }
+
+@font-face {
+    font-family: 'Archer-Light';
+    src: url('fonts/Archer-Book-Pro.otf');
+}
+@font-face {
+    font-family: 'Archer-Medium';
+    src: url('fonts/Archer-Medium-Pro.otf');
+}
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -112,7 +129,7 @@ span {
 .read_more {
   font-size:2rem;
   color:#bdb38e;
-  font-family:'Archer-Book', Courier, serif;
+  font-family:'Archer-Light', Courier, serif;
 }
 
 /* social icons */
@@ -170,7 +187,7 @@ span {
 header.global {
   width:100%;
   position:fixed;
-  padding-top:3.3rem;
+  padding:1.7rem 0;
   top:0;
   left:0;
   right:0;
@@ -188,7 +205,6 @@ header.global.scrolled
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
-  padding:1.7rem 0;
 }
 header.global nav {
   width:100%;
@@ -212,8 +228,6 @@ header.global h4 {
 .pagetype-article header.global h4,
 header.global.scrolled h4 {
   color:#fff;
-  font-size:3rem;
-  margin-top:.9rem;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
