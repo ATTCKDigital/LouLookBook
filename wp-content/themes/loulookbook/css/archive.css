@@ -1,6 +1,7 @@
 /****************ARCHIVE***************/
 .archive {
-  margin:22.3rem auto 15rem;
+  margin:0 auto 15rem;
+  padding-top:22.3rem;
 }
 .archive h1 {
   color:#333333;

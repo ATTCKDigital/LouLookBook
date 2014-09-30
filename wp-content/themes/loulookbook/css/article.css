@@ -1,7 +1,8 @@
 /****************ARTICLE***************/
 article {
-  margin:22.3rem auto 15rem;
+  margin:0 auto 15rem;
   width:69%;
+  padding-top:22.3rem;
 }
 .pagetype-article article header {
   position:relative;
@@ -84,7 +85,7 @@ article .share_tools span {
   font-size:1.4rem;
   color:#bdb38e;
   display:inline-block;
-  font-family:'Archer-Book', Courier, serif;
+  font-family:'Archer-Light', Courier, serif;
 }
 article .share_tools a.original {
   margin-right:4.6rem;
