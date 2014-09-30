@@ -24,11 +24,7 @@
   <section id="top_container" class="page_wide">
     <header class="global">
       <nav class="clearfix">
-        <?php if(is_home() || is_category()):?>
-          <h4><a href="/">Lou</a></h4>
-        <?php else: ?>
-          <h4><a href="/press">Back</a></h4>
-        <?php endif; ?>
+        <h4><a href="/">Lou</a></h4>
         <div class="social<?php if(!(is_home())){ echo ' invert';}?>">
           <a href="http://instagram.com/loulookbook" class="social_icon" target="_blank" id="instagram">Instagram</a>
           <a href="https://www.facebook.com/loulookbook" class="social_icon" target="_blank" id="facebook">Facebook</a>

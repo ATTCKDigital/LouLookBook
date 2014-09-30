@@ -105,7 +105,9 @@ span {
   -moz-box-shadow:    0px 0px 15px 3px rgba(0, 0, 0, 0.6);
   box-shadow:         0px 0px 15px 3px rgba(0, 0, 0, 0.6);
 }
-
+.pagetype-home #top_container {
+  overflow-x:hidden;
+}
 /* gridframework */
 .full_wide {
   width:100%;
@@ -261,15 +263,7 @@ header.global .social .social_icon {
   padding:1.7rem 0;
   background-color:rgba(0, 0, 0, .85);
 }
-.pagetype-article header.global h4 a {
-  background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAuCAYAAACMAoEVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGNTQzNUJBRjNCRkQxMUU0OERDNzkzMDk1NUY0NUQ5QiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGNTQzNUJCMDNCRkQxMUU0OERDNzkzMDk1NUY0NUQ5QiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkY1NDM1QkFEM0JGRDExRTQ4REM3OTMwOTU1RjQ1RDlCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkY1NDM1QkFFM0JGRDExRTQ4REM3OTMwOTU1RjQ1RDlCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+RqUb+wAAAWtJREFUeNrc2kFKw0AUBuA0XbkS7AF6AleFQt0KQm/gCQRX2QkewJUbPY3gThC68hLdFkXpusR/YAoSE+3MvEze/x78kIbOKx+ESfPIqK7roqc6RR6QI+QWeSky16gn3Bx5Ro795zUyzY0rM8AKfzxmx7XBXN0gu9y4wl2WQpkjn/Xvuhb8jaCYhUnhVMIkcGphqTjVsBScelgsjgIWg6OBheKoYCE4OtihOErYITha2H84athfOHpYF84ErA1nBtbELZCtFZjLfoayQJ5anqAZa4M8IncO1zUaYK+zcojBTaYaO9wKWSJfRlDOcY+8NjeUtp2yYt1QmidMAUNu4pUFnBlgzB/nygKOHpjysFpZwNECQ748YwOGLqACxiyiAcYupACmLFYPTG2gGijRxAHfNQKlGqkESjZTB5Ru2AW8GnL6JVkzP3A6+XHuA5lYeIPoDbnwoH3thhimlD31dcBz/zKbO74cAvctwADMyGMKxoc0MQAAAABJRU5ErkJggg==') 0 0 no-repeat;
-  background-size:contain;
-  width:2.7rem;
-  height:2.3rem;
-  display:inline-block;
-  text-indent:-9999em;
-  overflow:hidden;
-}
+
 /****************FOOTER***************/
 footer {
   background-color:#121212;

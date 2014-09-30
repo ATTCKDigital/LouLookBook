@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
       width: 600,
       height: 450,
       pagination: {
-        active: true
+        active: false
       },
       navigation: {
         active: false
@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
         active: true,
         effect: "fade",
         interval: 3000,
-        auto: false,
+        auto: true,
         swap: true
       },
       effect: {

@@ -22,9 +22,9 @@
 .ipad_slideshow .slideshow {
   width:600px;
   position:absolute;
-  background:url('../images/ipad_frame.jpg') center center no-repeat;
+  background:url('../images/ipad_frame.png') center center no-repeat;
   background-size:contain;
-  padding:5rem 6rem 6rem;
+  padding:5rem 10rem 9rem;
   top:-5.4rem;
   right:-149px;
 }
@@ -74,8 +74,8 @@
     width:100%;
   }
   .ipad_slideshow article {
-    margin:18.5rem 0 0 8rem;
-    width:30rem;
+    margin:18.5rem 0 0 3.5%;
+    width:25rem;
     
   }
   
@@ -128,15 +128,14 @@
   }
   .ipad_slideshow {
     height:auto;
-    margin-bottom:8rem;
   }
   .ipad_slideshow .slideshow {
     position:relative;
-    width:auto;
+    width:36rem;
     height:auto;
     top:0;
     right:0;
-    padding:8.5rem 5rem 10rem;
+    padding:9rem 6.5rem 12.5rem;
     background-size:100%;
   }
   .ipad_slideshow .slideshow #slides img {
