@@ -1,7 +1,7 @@
 /****************ARTICLE***************/
 article {
   margin:0 auto 15rem;
-  width:69%;
+  width:75%;
   padding-top:22.3rem;
 }
 .pagetype-article article header {
@@ -38,7 +38,8 @@ article .video iframe {
 article .article_info {
   width:60%;
 }
-article time {
+article time,
+article .article_info small {
   font-size:1.4rem;
   text-transform:uppercase;
   font-weight:bold;
@@ -55,13 +56,16 @@ article .article_info h1,
   font-family:'Archer-Medium', Courier, serif;
 }
 
-article .article_info .author span {
+article .article_info small {
   color:#333;
+  margin:1rem 0 0 0;
+  text-transform:none;
 }
 
 article .wp-post-image {
   width:auto;
-  max-width:40%;
+  max-width:9.5rem;
+  height:auto;
 }
 article .entry {
   clear:both;
@@ -73,6 +77,9 @@ article .entry p {
   margin:2.5rem 0 1.5rem;
   font-family:'Museo-Sans', Helvetica, Arial, sans-serif;
   font-weight:100;
+}
+article .entry p:first-child {
+  margin-top:4.5rem;
 }
 article .entry p:last-of-type {
   margin-bottom:2.5rem;
@@ -88,7 +95,16 @@ article .share_tools span {
   font-family:'Archer-Light', Courier, serif;
 }
 article .share_tools a.original {
-  margin-right:4.6rem;
+  margin-right:2.5rem;
+  border-right: 1px solid #bdb38e;
+  padding-right: 2.5rem;
+}
+article .share_tools a.original:last-child {
+  border-left: 1px solid #bdb38e;
+  border-right: none;
+  margin-right:0;
+  padding-right:0;
+  padding-left:2.5rem;
 }
 article .share_tools span {
   margin-right:2.5rem;
@@ -122,7 +138,6 @@ article .share_tools .social {
   }
   article .wp-post-image {
     display:inline-block;
-    max-width:20%;
   }
   
 }
@@ -142,11 +157,31 @@ article .share_tools .social {
     font-size:1.7rem;
   }
 }
-
+/************* small desktop ************/
+@media only screen and (max-width : 768px) {
+  article {
+    width:88%;
+  }
+  .share_tools .social .social_icon {
+    vertical-align:-2px;
+    margin-right:1rem;
+  }
+  .share_tools .social .social_icon#twitter {
+    background-position:-3.9rem 0;
+  }
+  .share_tools .social .social_icon#facebook {
+    background-position:-2.4rem 0;
+  }
+  .share_tools .social .social_icon#link {
+    background-position:-12.9rem 0;
+    width:2.7rem;
+    margin-right:2.5rem;
+  }
+}
 /************* iphone************/
 @media only screen and (max-width: 667px), only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
   article {
-    margin-top:15rem;
+    padding-top:15rem;
     width:85%;
   }
   article img.top_image {
@@ -163,19 +198,18 @@ article .share_tools .social {
   }
   article h1 {
     font-size:3rem;
-    margin-bottom:3rem;
   }
   article .wp-post-image {
     width:30%;
     height:auto;
-    margin:0 auto 4rem;
+    margin:3rem auto 4rem;
     display:block;
     max-width:100%;
   }
   article .entry p {
     font-size:1.6rem;
     line-height:2.5rem;
-    text-align:center;
+    text-align:left;
   }
   article .entry p:first-child {
     margin-top:0;
@@ -184,10 +218,13 @@ article .share_tools .social {
     margin-bottom:5rem;
   }
   article .share_tools a.original,
-  article .share_tools span {
+  article .share_tools span,
+  article .share_tools a.original:last-child {
     display:block;
     font-size:1.8rem;
     text-align:center;
+    border:none;
+    padding:0;
     margin-right:0;
   }
   article .share_tools a {

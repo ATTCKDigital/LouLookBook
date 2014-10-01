@@ -16,6 +16,9 @@
 .download .feature_box h2 {
   margin-bottom:3.3rem;
 }
+.download .download_link.phone {
+  display:none;
+}
 
 /************* iphone 6************/
 @media only screen and (max-width: 667px), only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
@@ -25,6 +28,12 @@
   }
   .download {
     padding:3rem 0;
+  }
+  .download .download_link.phone {
+    display:inline-block;
+  }
+  .download .download_link.desktop {
+    display:none;
   }
 
 }

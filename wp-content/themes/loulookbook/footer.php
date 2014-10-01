@@ -1,4 +1,4 @@
-<footer class="page_wide clearfix">
+<footer class="page_wide">
   <div class="footer_content full_wide clearfix">
     <div class="contact_info">
       <h3>Location</h3>

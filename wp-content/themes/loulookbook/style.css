@@ -188,7 +188,9 @@ span {
 .button:hover {
   background-color:#8a836a;
 }
-
+.phone {
+  display:none;
+}
 /****************HEADER***************/
 
 header.global {
@@ -390,7 +392,16 @@ footer .footer_content .contact_info .button {
     font-size:1.8rem;
   }
 }
-
+/************* ipad 6+ only************/
+@media only screen and (min-device-width : 414px) and (-webkit-device-pixel-ratio: 3) and (orientation:portrait) {
+  .phone {
+    display:inline-block;
+  }
+  .desktop {
+    display:none;
+  }
+  
+}
 /************* small desktop************/
 @media only screen and (max-width : 768px) {
   html,
@@ -462,6 +473,12 @@ footer .footer_content .contact_info .button {
   footer .footer_content .contact_info form {
     width: 75%;
     margin: 0 auto;
+  }
+  .phone {
+    display:inline-block;
+  }
+  .desktop {
+    display:none;
   }
 }
 

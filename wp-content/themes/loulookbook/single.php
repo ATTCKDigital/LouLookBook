@@ -19,6 +19,9 @@
         <div class="article_info">
           <time datetime="<?php the_time('F d, Y') ?>"><?php the_time('F d, Y') ?></time>
           <h1><?php the_title();?></h1>
+          <?php if(get_field('author')):?>
+            <small>by <?php the_field('author');?>
+          <?php endif;?>
         </div>
   		  <?php the_post_thumbnail('full');?>
       </header>
