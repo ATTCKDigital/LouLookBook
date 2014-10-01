@@ -254,10 +254,6 @@ header.global .social .social_icon {
 .pagetype-article header.global,
 .pagetype-article header.global h4,
 .pagetype-category header.global h4 {
-  -webkit-transition-duration: 0;
-  -moz-transition-duration: 0;
-  -o-transition-duration: 0;
-  transition-duration: 0;
   color:#bdb38e;
 }
 .pagetype-category header.global,
@@ -341,6 +337,12 @@ footer .footer_content .contact_info .button {
   }
   header.global {
     padding:1.7rem 0;
+    background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .85) 50%);
+    -webkit-transition: background-position 0s;
+    -moz-transition: background-position 0s;
+    -o-transition: background-position 0s;
+    transition: background-position 0s;
+    
   }
   header.global h4,
   header.global.scrolled h4 {
