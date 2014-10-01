@@ -11,7 +11,7 @@
   display:none;
 }
 
-/************* iphone 6************/
+/************* iphone < 6************/
 @media only screen and (max-width: 667px), only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
   .featured_bullets .column_1 {
     width:70%;
@@ -22,7 +22,7 @@
   .featured_bullets {
     margin-bottom:0;
   }
-  .featured_bullets .feature img {
+  .featured_bullets .feature img.wp-post-image {
     display:none;
   }
   .featured_bullets .feature img.phone {

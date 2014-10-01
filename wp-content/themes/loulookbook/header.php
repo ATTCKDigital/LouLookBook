@@ -29,7 +29,7 @@
           <a href="http://instagram.com/loulookbook" class="social_icon" target="_blank" id="instagram">Instagram</a>
           <a href="https://www.facebook.com/loulookbook" class="social_icon" target="_blank" id="facebook">Facebook</a>
           <a href="https://twitter.com/loulookbook" class="social_icon" target="_blank" id="twitter">Twitter</a>
-          <a href="http://bit.ly/LOUlookbook-site-iPad" class="button desktop">Download<?if(!(wp_is_mobile())):?> Lou<?php endif;?></a>
+          <a href="http://bit.ly/LOUlookbook-site-iPad" class="button tablet">Download<?if(!(wp_is_mobile())):?> Lou<?php endif;?></a>
           <a href="http://bit.ly/LOUlookbook-site-iPhone" class="button phone">Download<?if(!(wp_is_mobile())):?> Lou<?php endif;?></a>
         </div>
       </nav>
