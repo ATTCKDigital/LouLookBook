@@ -119,6 +119,7 @@
   }
   .archive article .entry a.post_image img {
     width:30%;
+    max-height:100%;
   }
 
 
