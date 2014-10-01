@@ -33,7 +33,12 @@
         <span>Share Article</span>
         <div class="social">
           <a href="https://twitter.com/home/?status=Check out this post: <?php the_permalink() ?> via @loulookbook" class="social_icon" target="_blank" id="twitter">Twitter</a>
-          <a href="https://www.facebook.com/sharer/sharer.php" class="social_icon" target="_blank" id="facebook">Facebook</a>
+          <?php
+            $url = get_permalink();
+            $encoded = urlencode($url);
+          
+          ?>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $encoded;?>" class="social_icon" target="_blank" id="facebook">Facebook</a>
           <a href="mailto:type%20email%20address%20here?subject=I%20wanted%20to%20share%20this%20post%20with%20you%20from%20<?php bloginfo('name'); ?>&body=<?php the_title(); ?> - <?php the_permalink(); ?>" title="Share This" class="social_icon" target="_blank" id="link">Link</a>
         </div>
         <a href="/press" class="original">See All Articles &#x2192;</a>

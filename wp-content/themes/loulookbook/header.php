@@ -7,7 +7,11 @@
 <meta property="og:title" content="<?php the_title();?>"/>
 <meta property="og:url" content="<?php the_permalink();?>"/>
 <meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
-
+<meta property="og:image" content="<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+$url = $thumb['0']; echo $url;
+?>"/>
+<meta property="og:description" content="<?php the_excerpt();?>"/>
+<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri() . '/images/favicon.ico'; ?>">
 <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { echo wp_title(); } elseif (is_category()) {echo '&raquo; Press';} ?></title>
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
