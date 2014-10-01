@@ -18,7 +18,7 @@
   width:84%;
   clear:both;
   border-top:1px solid #e8e6e2;
-  padding:4.3rem 0 0 0;
+  padding:3.3rem 0 0 0;
 }
 
 
@@ -34,6 +34,7 @@
 }
 .archive article .entry h2 {
   line-height:2.8rem;
+  max-width:80%;
 }
 .archive article .entry p {
   float:left;
