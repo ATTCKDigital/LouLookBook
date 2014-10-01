@@ -8,11 +8,7 @@ jQuery(document).ready(function($) {
         social.addClass('invert')
         
       })
-      var scroll = $(window).scrollTop();
-      if (scroll == 0) {
-        header.removeClass('scrolled');
-        social.removeClass('invert')
-      }
+      
       
   });
 });

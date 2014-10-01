@@ -21,6 +21,7 @@
   margin:0 auto;
   max-height:3rem;
   width:auto;
+  height:auto;
 }
 .latest article .logo_wrap {
   display:block;

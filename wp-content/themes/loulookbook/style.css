@@ -101,9 +101,9 @@ span {
   background-color:#fff;
   height:100%;
   max-width:1000px;
-  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow:    0px 0px 15px 3px rgba(0, 0, 0, 0.6);
-  box-shadow:         0px 0px 15px 3px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(218, 218, 218, 0.9);
+  -moz-box-shadow:    0px 0px 2px 2px rgba(218, 218, 218, 0.9);
+  box-shadow:         0px 0px 2px 2px rgba(218, 218, 218, 0.9);
 }
 .pagetype-home #top_container {
   overflow-x:hidden;
