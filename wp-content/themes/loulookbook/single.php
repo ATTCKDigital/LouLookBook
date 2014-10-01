@@ -36,7 +36,7 @@
           <a href="https://www.facebook.com/sharer/sharer.php" class="social_icon" target="_blank" id="facebook">Facebook</a>
           <a href="mailto:type%20email%20address%20here?subject=I%20wanted%20to%20share%20this%20post%20with%20you%20from%20<?php bloginfo('name'); ?>&body=<?php the_title(); ?> - <?php the_permalink(); ?>" title="Share This" class="social_icon" target="_blank" id="link">Link</a>
         </div>
-        <a href="/press" target="_blank" class="original">See All Articles &#x2192;</a>
+        <a href="/press" class="original">See All Articles &#x2192;</a>
       </div>
   	<?php endwhile; endif; ?>
 
